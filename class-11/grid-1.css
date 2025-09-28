@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: [pehla]120px [dusra]100px;
+    grid-template-rows: [first]100px [second]100px [third]100px;
+}
+
+.items{
+    border: 4px solid red;
+    height: 55px;
+    width: 55px;
+}
+
+.items-1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}

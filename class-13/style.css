@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(48, 46, 46);
+}
+
+#card{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px; */
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    line-height: 4.5rem;
+    margin-left: 1.5rem;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header h1{
+    font-size: 22px;
+}
+#header h4{
+    font-size: small;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+#middle{
+    display: flex;
+    justify-content: space-between;
+}
+#saying h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+#saying h1 span{
+    opacity: .3;
+}
+
+#pointer{
+    width: 3px;
+    height: 4rem;
+    background-color:orangered;
+    margin-right: 75px;
+    margin-top: 5px;
+}
+
+#faces{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 11rem;
+    margin-left: 2rem; */
+}
+#names h4{
+    margin-top: 11rem;
+    margin-left: 2rem;
+font-size: small;
+font-weight: 500;
+opacity: .8;
+}
+
+#pics{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 1.3rem;
+}
+#face1{
+    position: relative;
+    z-index: 2;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 65px;
+    background-image: url(https://images.unsplash.com/photo-1526526431900-88eb525f1e4a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+#face2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+    margin-left: -2.5rem;
+    border-radius: 65px;
+    background-color: black;
+    
+}
+
+#face2 i{
+    font-size: 3rem;
+    color: white;
+}

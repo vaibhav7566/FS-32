@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #0f172a;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+  color: #e2e8f0;
+}
+
+.card {
+  width: min(520px, 92vw);
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.status {
+  font-size: 14px;
+  opacity: .85;
+  position: relative;
+}
+
+.badge {
+  margin-left: 8px;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #22c55e;
+  color: #022;
+  background: #22c55e;
+  display: none; /* initially hidden, you can show via JS */
+}
+
+.bar {
+  margin-top: 14px;
+  height: 14px;
+  width: 100%;
+  background: #1f2937;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  outline: 1px solid #334155;
+}
+
+.fill {
+  height: 100%;
+  width: 0%; /* JS will update this */
+  background: linear-gradient(90deg, #22c55e, #10b981, #06b6d4);
+}
+
+.ticks {
+  position: relative;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  opacity: .7;
+}
+
+.ticks span {
+  min-width: 2ch;
+  text-align: center;
+}
+
+div{
+    display: initial;
+}

@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    padding: 10px 20px;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgb(121, 120, 120);
+}
+
+#top{
+    /* background-color: rgb(169, 172, 174); */
+    border-radius: 20px;
+}
+
+#topbanner{
+    color: white;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+#ltb{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 100;
+    gap: 25px;
+    margin-left: 25px;
+}
+
+#rtb{
+    padding-right: 25px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+#lnav{
+    display: flex;
+    gap: 20px;
+}
+#cnav{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#cnav a{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+#cnav button{
+    padding: 5px 15px;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+}
+#rnav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#rnav button{
+    padding: 8px 20px;
+    background-color: rgb(165, 162, 162);
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black; 
+}
+
+#rnav i{
+    font-size: 20px;
+}
+
+#photu{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 460px;
+    background-image: url(https://images.unsplash.com/photo-1633968045267-4bad324058ed?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    line-height: 75px;
+    padding-left: 40px;    
+}
+#photu h1{
+    font-size: 100px;
+    font-weight: 500;
+    position: absolute; 
+    top: 50%; 
+    left: 5%;
+    transform: translate(0%,-50%);
+}
+#photu i{
+    font-size: 35px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translate(0%,0%);        	
+}
+#photu h2{
+    
+    position: absolute;
+    right: 0%;
+    transform-origin: 100% 50%;
+    transform: rotate(-90deg) translate(0,-50%);
+
+    color: transparent;
+    font-size: 60px;
+    line-height: 1;
+    -webkit-text-stroke: 1px rgb(168, 165, 165);
+}
+
+
+#middle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    border-radius: 20px;
+    padding: 20px 50px;
+}
+#lmid{
+    width: 40%;
+    background-color: #797878;
+    padding: 10px;
+}
+
+#mlt{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+#mlt a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+#mlt h2{
+    font-size: 41px;
+    font-weight: 500;
+}
+
+#mlb{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+#mlbleft h3{
+font-size: 30px;
+font-weight: 600;
+margin-top: 25px;
+margin-bottom: 10px;
+}
+#mlbleft h5{
+font-size: 13px;
+font-weight: 500;
+padding-left: 3px;
+}
+#mtbright h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+#mtbright h5{
+    font-size: 13px;
+font-weight: 500;
+padding-left: 3px;
+}
+#mtbright i{
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+#rmid{
+    width: 40%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgb(249, 247, 244);
+}
+#rmid h2{
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+#rmid p{
+    font-size: 13px;
+    padding-bottom: 15px;
+    opacity: .7;
+    font-weight: 500;
+}
+#rmid form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#rmid form input{
+    border: none;
+    border-bottom: 1px solid rgb(80, 79, 79);
+    padding-bottom: 8px;
+    outline: none;
+    background-color: #F9F7F4;
+}
+#rmid form textarea{
+    resize: none;
+    padding: 5px 5px 25px 5px;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid rgb(80, 79, 79) ;
+    background-color: #F9F7F4;
+
+}
+
+#rmid form button{
+    /* width: 35%; */
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+    margin-right: 220px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#map{
+    width: 100%;
+    height: 450px;
+    background-image: url(https://cdn11.bigcommerce.com/s-yqkp4d/images/stencil/1024x1024/products/5284/7427/bw_mural__05436.1453158303.jpg?c=2);
+    border-radius: 10px;
+}
+
+#location{
+    width: 15%;
+    background-color: transparent;
+    color: white;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+#bottom{
+    background-color: rgb(24, 23, 23);
+    color: white;
+    border-radius: 10px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    padding-bottom: 50px;
+}
+
+#botl{
+    width: 50%;
+    /* background-color: red; */
+    
+}
+#botl i{
+    font-size: 50px;
+}
+#botl p{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+   background: linear-gradient(to left,rgb(166, 2, 2),rgb(30, 30, 233));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+
+#botr{
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    gap: 100px;
+}
+#botrl h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#botrr h3{
+    font-size: 30px;
+font-weight: 400;
+margin-bottom: 10px;
+} 
+#botrl a, #botrr a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    height: 100%;
+    background-color: #05081B;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 100px;
+}
+nav{
+    padding: 10px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main nav .leftnav{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+nav .leftnav img{
+    width: 60px;
+}
+
+nav .middlenav{
+    padding: 10px;
+    font-size: 1rem;
+    border:1px solid rgba(255, 255, 255, 0.193);
+    border-radius: 20px;
+    background-color: #1F2235;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    text-transform: uppercase;
+}
+
+nav .middlenav a{
+    text-decoration: none;
+    color: #D5D9E5;
+}
+nav .middlenav a:hover{
+    background-color: white;
+    color: #393939;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+nav .rightnav{
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #3C70F4;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+nav .rightnav:hover{
+    background-color: rgb(17, 17, 180);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+section h1{
+font-size: 70px;
+text-align: center;
+line-height: 85px;
+}
+
+section h1 span{
+    color: #3B6EFD;
+}
+
+section p{
+    width: 30%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.674);
+}
+
+section .getstarted{
+    display: flex;
+}
+
+section .getstarted .leftline{
+    width: 10px;
+    height: 4px;
+    background-color: #3A6FF3;
+}
+
+section .getstarted Button{
+    font-size: 12px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #3B6EF6;
+    color: white;
+}
+section Button:hover{
+    background-color: rgb(17, 17, 180);
+}
+
+

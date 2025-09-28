@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    
+    display: grid;
+    height: 300px;
+    width: 300px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    grid-template-areas: "nav nav tool"
+                         "nav nav box"
+                         "bot fot box";
+}
+
+.a{
+    grid-area: nav;
+    background-color: black;
+}
+.b{
+    grid-area: bot;
+    background-color: red;
+}
+.c{
+    grid-area: box;
+    background-color: blue;
+}

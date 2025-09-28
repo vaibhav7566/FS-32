@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="main relative w-full h-full bg-black text-white px-8 overflow-hidden ">
+        <div class="nav flex items-center justify-between items-center w-full h-17 mt-4 mb-7">
+            <div class="lnav flex gap-10 items-center">
+                <a href="#"><i class="ri-gamepad-line"></i> Games</a>
+                <a href="#"><i class="ri-medal-line"></i> Store</a>
+                <div class="Search bg-zinc-800 rounded-2xl py-1 px-3">
+                    <i class="ri-search-2-line pr-1"></i>
+                    <input class="outline-none" type="text" placeholder="Search Games...">
+                    <i class="ri-exchange-2-line"></i>
+                </div>
+            </div>
+            <div class="cnav ">
+                <i class="ri-honor-of-kings-line text-5xl"></i>
+            </div>
+            <div class="rnav flex items-center justify-end gap-13 w-110 h-10 ">
+                <div class="logo flex gap-4 text-xl">
+                    <i class="ri-shopping-bag-4-line"></i>
+                <i class="ri-donut-chart-fill"></i>
+                </div>
+                <div class="w-35 h-9 relative flex items-center gap-2 p-1 rounded-2xl bg-zinc-900">
+                    <img class="w-6" src="https://th.bing.com/th/id/R.ef0fd9c8d81c2526669b8dc68e2b3112?rik=RdVV1CJ5DB%2f9LQ&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f4%2fDollar-Gold-Coin-PNG.png&ehk=p8ficNGSAjOGbGr7xUshKZ6GIWHIghlMp29WjekPjkw%3d&risl=&pid=ImgRaw&r=0" alt="">
+                    <h3>$129000</h3> 
+                    <div class="plus w-5 h-5 absolute right-0 translate-x-1/2 flex justify-center items-center rounded-full bg-blue-500"><i class="ri-add-line"></i></div>
+                </div>
+                <div class="profile w-10 h-10 rounded-xl overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/40/aa/7c/40aa7cbc12928f1222727802faec5a1f.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="middle w-full px-30 flex items-center flex-col ">
+            <div class="top flex items-center justify-center gap-1.5 ">
+                <i class="ri-record-mail-line text-yellow-300 text-md"></i>
+                <h4 class="text-yellow-300 text-lg">5 Months</h4>
+                <div class="w-7 h-[1.8px] opacity-25 bg-zinc-100"></div>
+                <h4 class="opacity-25">Free Access</h4>
+            </div>
+           
+                <div class="mainheading flex items-center justify-center flex-col ">
+                    <h1 class="text-8xl tracking-[3px] font-semibold">Fun Games</h1>
+                <h1 class="text-8xl tracking-[3px] font-semibold"> Nintendo Switch</h1>
+                </div>
+
+                <p class="text-center opacity-45 mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit itaque <br> accusamus hic  molestias reprehenderit in?</p>
+        </div>
+
+        <div class="cards flex items-center justify-center">
+            <div class="absolute left-[16.33%] -bottom-50 -translate-x-1/2 overflow-hidden w-70 h-100 bg-sky-900 -rotate-10 rounded-3xl"> <img src="https://i.pinimg.com/736x/92/ee/9e/92ee9e013fcd250ca7d7a9b80daadc99.jpg" alt=""></div>
+
+            <div class="absolute left-[32.66%] -bottom-30 -translate-x-1/2 overflow-hidden w-70 h-100 bg-sky-700 -rotate-8 z-4 rounded-3xl"><img src="https://i.pinimg.com/736x/76/a9/19/76a919ff17380f32acc0c30debdedcec.jpg" alt=""></div>
+
+            <div class="absolute left-1/2 -bottom-20 -translate-x-1/2 overflow-hidden w-75 h-100 bg-sky-500 z-5 rounded-3xl"><img src="https://i.pinimg.com/736x/0a/78/2c/0a782c6f2b76ad08c6b4bf922986e62a.jpg" alt=""></div>
+
+            <div class="absolute left-[64.32%] -bottom-30 -translate-x-1/2 overflow-hidden w-70 h-100 bg-sky-400 rotate-8 z-4 rounded-3xl"> 
+                <img src="https://i.pinimg.com/736x/f3/e9/e5/f3e9e58d4ac27513264439b00a881d9c.jpg" alt="">
+            </div>
+
+            <div class="absolute left-[80.65%] -bottom-50 -translate-x-1/2 overflow-hidden w-70 h-100 bg-sky-200 rotate-10 rounded-3xl"><img src="https://i.pinimg.com/736x/45/ef/b0/45efb013588ddff02171e96a01ab6b58.jpg" alt=""></div>
+        </div>
+    </div>
+    
+</body>
+</html>
