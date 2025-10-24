@@ -1,35 +1,51 @@
-In CSS there are two types of units which are-:
+## In CSS there are two types of units which are-:
 
-1).Absolute Units
+# 1).Absolute Units
 
 The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
 
 Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they can be used if the output medium is known, such as for print layout.
 
-Unit	Description
-cm	centimeters
-mm	millimeters
-in	inches (1in = 96px = 2.54cm)
-px *	pixels (1px = 1/96th of 1in)
-pt	points (1pt = 1/72 of 1in)
-pc	picas (1pc = 12 pt)
-* Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.
+##  Unit Description
+ * cm centimeters
+ * mm millimeters
+ * in inches (1in = 96px = 2.54cm)
 
+ * px pixels (1px = 1/96th of 1in) IMP  - screen chote chote bulbs se milkar bani hai toh hum ek chote buld ko ek pixel assume kar sakte hai
 
-2).Relative units
+ * pt points (1pt = 1/72 of 1in)
+ * pc picas (1pc = 12 pt)
+ * Pixels (px) are relative to the viewing device. For low-dpi devices, 1px is one device pixel (dot) of the display. For printers and high resolution screens 1px implies multiple device pixels.
+
+# 2).Relative units
+
 Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
 
-Unit	Description	
-em	Relative to the font-size of the element (2em means 2 times the size of the  current font)	                                              Important to study
-ex	Relative to the x-height of the current font (rarely used)	
-ch	Relative to the width of the "0" (zero)	
-rem	Relative to font-size of the root element	           Important to study
-vw	Relative to 1% of the width of the viewport*	       Important to study
-vh	Relative to 1% of the height of the viewport*	       Important to study
-vmin	Relative to 1% of viewport's* smaller dimension	
-vmax	Relative to 1% of viewport's* larger dimension	
-%	Relative to the parent element                         Important to study
+## Unit Description
 
+* % Relative to the parent element Important to study
+  (Varies according to their parent means depends on parent)
+
+* vw Relative to 1% of the width of the viewport* Important to study
+(depending on screen width)
+
+* vh Relative to 1% of the height of the viewport* Important to study
+(depending on screen height) 
+
+* vmin Relative to 1% of viewport's* smaller dimension (Agar width kam hai toh width ke hisab se change hoga or agar height kam
+ hai toh height ke hisab se change hoga)
+
+* vmax Relative to 1% of viewport's* larger dimension (Agar width jyada hai toh width ke hisab se change hoga or agar height jyada hai toh height ke hisab se change hoga)
+
+
+* em  - parent ko fontsize ki value do or saare childs ko em me value dedo or parent ki value change karenge toh saare childs ki bhi chnage ho jayegi.(It is used for giving font sizes)
+ Relative to the font-size of the element (2em means 2 times the size of the current font) . Important to study
+
+* rem - 16px (According to the root) Relative to font-size of the root element Important to study
+
+* ch Relative to the width of the "0" (zero). (lek line me kitne characters rakhne hai iski help se decide kar sakte hai jise width: 10ch)
+
+* lh - (line height) use like for ex- margin: 1lh ,2lh . It provides margin of one line and two line .
 
 viewport -> viewport bo part or area hota hai jispe aap aapki website ko draw karte ho,create karte or rander karte ho
 
@@ -41,11 +57,34 @@ vh -> viewport height
 
 vh & vw Relative rhti hai viewport ke
 
-
 % -> ye unit apne parent element ke relative me kaam karti hain
 
 rem -> depends on user's settings , html tag ke font size
-       By default 1rem = 16px
+By default 1rem = 16px
 em
 
 Note -: font size ,padding ,margin,gap ke liye rem or em ka bhaut jyada use karte hai
+
+
+
+# 3. CSS Layouts: Flexbox and Grid for Responsive Structure
+
+Introduction to
+
+## display: flex and its behavior
+
+* flex-direction
+
+* justify-content
+
+* align-items,
+
+* flex-wrap,
+
+* gap,
+
+* Key properties:
+
+* flex-grow, order
+
+* Use-cases and limitations
